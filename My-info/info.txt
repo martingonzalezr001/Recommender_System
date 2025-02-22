@@ -1,0 +1,11 @@
+Front-end → Frameworks, librerías y herramientas para construir interfaces de usuario.
+Back-end → Frameworks, entornos de ejecución y herramientas para lógica de servidor y API.
+Database Dataset → Motores de bases de datos SQL y NoSQL, así como herramientas de gestión de datos.
+Authentication & Security → Herramientas para autenticación, autorización, encriptación y seguridad en general.
+Payments & E-commerce → Pasarelas de pago, plataformas de comercio electrónico y gestión de transacciones.
+Cloud & Hosting → Servicios en la nube, alojamiento de aplicaciones y herramientas de infraestructura.
+DevOps & CI/CD → Herramientas para integración continua, entrega continua, automatización y gestión de servidores.
+Messaging & Real-Time Communication → Herramientas para mensajería, WebSockets, comunicación en tiempo real.
+Search & Recommendation Engines → Motores de búsqueda, indexación y recomendación de contenido.
+Media & Storage → Almacenamiento de archivos, CDN, gestión de contenido multimedia.
+Analytics & Monitoring → Herramientas para analítica, observabilidad, monitoreo de aplicaciones y logs.

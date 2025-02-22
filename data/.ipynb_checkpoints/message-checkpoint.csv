@@ -1,0 +1,26 @@
+Nombre,Tipo de Comunicación,Latencia,Soporte para Encriptación,Integración con Proveedores Cloud,Facilidad de Integración,Escalabilidad,Coste,Seguridad,Nivel de Uso
+Twilio,Mensajería,VoIP,Baja,Sí,Multi-cloud,8,Alta,Medio,Alta,Alto
+SendGrid,Mensajería,Baja,Sí,Multi-cloud,9,Alta,Bajo,Alta,Alto
+Postmark,Mensajería,Baja,Sí,Multi-cloud,9,Alta,Bajo,Alta,Medio
+Pusher,WebSockets,Baja,Sí,Multi-cloud,8,Alta,Medio,Alta,Medio
+Ably,WebSockets,Baja,Sí,Multi-cloud,8,Alta,Medio,Alta,Medio
+Socket.io,WebSockets,Baja,Sí,Multi-cloud,7,Alta,Bajo,Alta,Alto
+Firebase Cloud Messaging,Push Notifications,Baja,Sí,Google Cloud,9,Alta,Bajo,Alta,Alto
+OneSignal,Push Notifications,Baja,Sí,Multi-cloud,9,Alta,Bajo,Alta,Medio
+Amazon SNS,Push Notifications,Baja,Sí,AWS,7,Alta,Bajo,Alta,Alto
+Amazon SQS,Mensajería,Baja,Sí,AWS,7,Alta,Bajo,Alta,Alto
+Azure Service Bus,Mensajería,Baja,Sí,Azure,7,Alta,Bajo,Alta,Medio
+Google Pub/Sub,Mensajería,Baja,Sí,Google Cloud,7,Alta,Bajo,Alta,Medio
+Kafka,Streaming,Baja,Sí,Multi-cloud,6,Alta,Bajo,Alta,Alto
+RabbitMQ,Mensajería,Baja,Sí,Multi-cloud,6,Alta,Bajo,Alta,Alto
+ActiveMQ,Mensajería,Baja,Sí,Multi-cloud,6,Alta,Bajo,Alta,Medio
+NATS,Mensajería,Baja,Sí,Multi-cloud,7,Alta,Bajo,Alta,Medio
+Matrix,Mensajería,Baja,Sí,Multi-cloud,7,Alta,Bajo,Alta,Bajo
+Mattermost,Mensajería,Baja,Sí,Multi-cloud,7,Alta,Bajo,Alta,Bajo
+Zulip,Mensajería,Baja,Sí,Multi-cloud,7,Alta,Bajo,Alta,Bajo
+Rocket.Chat,Mensajería,Baja,Sí,Multi-cloud,7,Alta,Bajo,Alta,Bajo
+Zoom,Video Conferencia,Baja,Sí,Multi-cloud,8,Alta,Medio,Alta,Alto
+Jitsi Meet,Video Conferencia,Baja,Sí,Multi-cloud,8,Alta,Bajo,Alta,Medio
+Microsoft Teams,Mensajería,Video Conferencia,Baja,Sí,Azure,8,Alta,Medio,Alta,Alto
+Slack,Mensajería,Baja,Sí,Multi-cloud,9,Alta,Medio,Alta,Alto
+Discord,Mensajería,VoIP,Baja,Sí,Multi-cloud,8,Alta,Medio,Alta,Alto

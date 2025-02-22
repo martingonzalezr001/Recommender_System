@@ -1,0 +1,25 @@
+Herramienta,Métodos de Pago Soportados,Soporte para E-commerce,Soporte para Suscripciones,Soporte para Pagos Internacionales,Soporte para Fraude y Prevención,Cargos por Transacción,Escalabilidad,Coste,Seguridad,Nivel de Uso
+Stripe,"Tarjetas de Crédito, PayPal, Bitcoin, Transferencias Bancarias",Sí,Sí,Sí,Sí,5%,Alta,Alto,Alta,Alto
+PayPal,"Tarjetas de Crédito, PayPal",No,Sí,Sí,Sí,2.9% + $0.30,Alta,Bajo,Alta,Alto
+Square,"Tarjetas de Crédito, Apple Pay, Google Pay",Sí,Sí,Sí,Sí,2.6% + $0.10,Alta,Medio,Alta,Alto
+Razorpay,"Tarjetas de Crédito, PayPal, Google Pay",Sí,Sí,Sí,Sí,2% + $0.30,Alta,Bajo,Alta,Medio
+Adyen,"Tarjetas de Crédito, PayPal, Transferencias Bancarias",Sí,Sí,Sí,Sí,0.6%,Alta,Alto,Alta,Alto
+Braintree,"Tarjetas de Crédito, PayPal, Venmo",Sí,Sí,Sí,Sí,2.9% + $0.30,Alta,Medio,Alta,Alto
+Worldpay,"Tarjetas de Crédito, PayPal, Transferencias Bancarias",Sí,Sí,Sí,Sí,2.75%,Alta,Medio,Alta,Alto
+Klarna,"Transferencias Bancarias, PayPal",Sí,Sí,Sí,Sí,2.9% + $0.30,Alta,Bajo,Alta,Alto
+Shopify Payments,"Tarjetas de Crédito, Shopify",Sí,Sí,Sí,Sí,2.9% + $0.30,Alta,Medio,Alta,Alto
+Payoneer,"Tarjetas de Crédito, Transferencias Bancarias",Sí,Sí,Sí,Sí,1% + tarifa fija,Alta,Medio,Alta,Alto
+2Checkout,"Tarjetas de Crédito, PayPal",Sí,Sí,Sí,Sí,3.5% + $0.35,Alta,Medio,Alta,Medio
+WePay,"Tarjetas de Crédito, PayPal",Sí,Sí,Sí,Sí,2.9% + $0.30,Alta,Medio,Alta,Medio
+Alipay,"Tarjetas de Crédito, Transferencias Bancarias",Sí,Sí,Sí,Sí,0.6%,Alta,Medio,Alta,Alto
+Skrill,"Tarjetas de Crédito, PayPal",Sí,Sí,Sí,Sí,2.9% + $0.30,Alta,Medio,Alta,Alto
+Mollie,"Tarjetas de Crédito, PayPal",Sí,Sí,Sí,Sí,1.8% + $0.25,Alta,Medio,Alta,Medio
+Paytm,"Tarjetas de Crédito, PayPal, Transferencias Bancarias",Sí,Sí,Sí,Sí,2%,Alta,Medio,Alta,Alto
+Authorize.Net,"Tarjetas de Crédito, PayPal, Venmo",Sí,Sí,Sí,Sí,2.9% + $0.30,Alta,Medio,Alta,Alto
+BlueSnap,"Tarjetas de Crédito, PayPal",Sí,Sí,Sí,Sí,2.5%,Alta,Medio,Alta,Medio
+Fattmerchant,Tarjetas de Crédito,Sí,Sí,Sí,Sí,0.4% + tarifa fija,Alta,Medio,Alta,Medio
+Vantiv,"Tarjetas de Crédito, Apple Pay",Sí,Sí,Sí,Sí,2.5%,Alta,Medio,Alta,Medio
+Zalando Payments,"Tarjetas de Crédito, PayPal",Sí,Sí,Sí,Sí,3%,Alta,Medio,Alta,Bajo
+Venmo,"Tarjetas de Crédito, PayPal",Sí,Sí,Sí,Sí,2.9% + $0.30,Alta,Medio,Alta,Alto
+BillDesk,Transferencias Bancarias,Sí,Sí,Sí,Sí,1% + tarifa fija,Alta,Bajo,Alta,Medio
+KOMOJU,"Tarjetas de Crédito, PayPal",Sí,Sí,Sí,Sí,3.6%,Alta,Medio,Alta,Bajo

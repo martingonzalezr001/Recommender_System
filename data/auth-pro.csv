@@ -1,0 +1,25 @@
+Producto,Escalabilidad,Coste,Seguridad,Nivel de uso,Compatibilidad,Facilidad de integración,Autenticación multifactor,SSO,Protocolos soportados,Ejemplos de uso
+Auth0,Alta,De pago,Muy Alta,Alto,Amplia,Alta,Sí,Sí,OAuth, OpenID Connect, JWT,Twitch, Notion
+Firebase Authentication,Alta,Freemium,Alta,Alto,Amplia,Alta,Sí,Sí,OAuth, OpenID Connect, JWT,Airbnb, Duolingo
+Okta,Alta,De pago,Muy Alta,Alto,Amplia,Alta,Sí,Sí,OAuth, SAML, OpenID Connect,Netflix, JetBlue
+AWS Cognito,Alta,Freemium,Alta,Alto,Amplia,Media,Sí,Sí,OAuth, OpenID Connect, JWT,Shopify, Hulu
+Microsoft Entra ID,Alta,De pago,Muy Alta,Alto,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,Azure, LinkedIn
+Keycloak,Alta,Gratis,Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,Red Hat, Alfresco
+Apple Sign-In,Alta,Gratis,Muy Alta,Alto,Apple Only,Alta,Sí,Sí,OAuth, JWT,Dropbox, Adobe, Airbnb
+Facebook Login,Alta,Gratis,Alta,Alto,Facebook Only,Alta,Sí,Sí,OAuth, OpenID Connect,Instagram, Spotify, Tinder
+Google Identity,Alta,Gratis,Alta,Muy Alto,Amplia,Alta,Sí,Sí,OAuth, OpenID Connect,Medium, Trello, Notion
+Twitter OAuth,Media,Gratis,Media,Medio,Twitter Only,Alta,No,Sí,OAuth, JWT,Reddit, Discord, Medium
+Duo Security,Alta,De pago,Muy Alta,Medio,Amplia,Media,Sí,No,OAuth, SAML, OpenID Connect,Universidades, Bancos
+OneLogin,Alta,De pago,Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,Uber, Yelp
+Ping Identity,Alta,De pago,Muy Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,BMW, HP
+Centrify,Alta,De pago,Muy Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,IBM, Coca-Cola
+ForgeRock,Alta,De pago,Muy Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,BMW, HSBC
+IBM Security Verify,Alta,De pago,Muy Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,Shell, Allianz
+RSA SecureID,Alta,De pago,Muy Alta,Medio,Amplia,Media,Sí,No,OAuth, SAML, OpenID Connect,Bancos, Gobierno
+Idaptive,Alta,De pago,Muy Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,Adobe, Salesforce
+CyberArk,Alta,De pago,Muy Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,Airbus, Nasdaq
+JumpCloud,Alta,Freemium,Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,Tech Startups, SMBs
+SecureAuth,Alta,De pago,Muy Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,HealthCare, Finance
+Rippling,Alta,De pago,Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,HR Platforms, Payroll Systems
+SailPoint,Alta,De pago,Muy Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,Financial Institutions, Enterprise
+TrustBuilder,Alta,De pago,Alta,Medio,Amplia,Media,Sí,Sí,OAuth, SAML, OpenID Connect,Government, Banking

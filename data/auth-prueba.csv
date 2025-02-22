@@ -1,0 +1,25 @@
+Herramienta,Tipo de Autenticación,Soporte para MFA,Integración con Proveedores de Identidad,Cifrado de Datos,Cumplimiento de Normativas de Seguridad,Autorización Granular,Prevención de Ataques Comunes,Soporte para Gestión de Contraseñas,Escalabilidad,Coste,Seguridad,Nivel de Uso
+OAuth2,OAuth,Sí,Sí,No,Sí,Sí,Sí,Sí,Alta,Bajo,Alta,Alto
+Auth0,OAuth/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Alto,Alta,Alto
+Okta,OAuth/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Alto,Alta,Alto
+Firebase Authentication,Contraseña/OAuth/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Medio,Alta,Alto
+OneLogin,OAuth/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Alto,Alta,Alto
+Cognito (AWS),OAuth/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Medio,Alta,Alto
+Duo Security,Contraseña/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Medio,Alta,Alto
+Keycloak,OAuth/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Bajo,Alta,Alto
+PingIdentity,OAuth/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Alto,Alta,Alto
+Bitwarden,Contraseña,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Bajo,Alta,Alto
+LastPass,Contraseña/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Medio,Alta,Alto
+1Password,Contraseña/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Medio,Alta,Alto
+CyberArk,Contraseña/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Alto,Alta,Medio
+Authy,MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Bajo,Alta,Medio
+SecureAuth,OAuth/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Medio,Alta,Medio
+TOTP (Time-based One-Time Password),MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Bajo,Alta,Medio
+Yubico (YubiKey),Biometría/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Alto,Alta,Medio
+SailPoint,OAuth/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Alto,Alta,Medio
+RSA SecurID,Contraseña/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Alto,Alta,Medio
+Microsoft Active Directory,Contraseña/Sí,No,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Alto,Alta,Alto
+IBM Security Identity Governance and Intelligence,OAuth/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Alto,Alta,Medio
+Fortinet,Contraseña/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Medio,Alta,Medio
+Thales CipherTrust,Contraseña/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Alto,Alta,Medio
+PingFederate,OAuth/MFA,Sí,Sí,Sí,Sí,Sí,Sí,Sí,Alta,Alto,Alta,Medio

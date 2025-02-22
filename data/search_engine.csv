@@ -1,0 +1,26 @@
+Nombre;Tipo de Motor;Soporte para Machine Learning;Capacidad de Indexación;Tiempo de Respuesta;Facilidad de Integración;Escalabilidad;Coste;Seguridad;Nivel de Uso
+Elasticsearch;Búsqueda Full-Text, Indexación;Sí;Alta;Bajo;8;Alta;Medio;Alta;Alto
+Solr;Búsqueda Full-Text, Indexación;No;Alta;Medio;7;Alta;Bajo;Alta;Medio
+Algolia;Búsqueda Full-Text;Sí;Alta;Bajo;9;Alta;Medio;Alta;Alto
+MeiliSearch;Búsqueda Full-Text;No;Media;Bajo;9;Media;Bajo;Alta;Medio
+Typesense;Búsqueda Full-Text;No;Media;Bajo;9;Media;Bajo;Alta;Bajo
+Whoosh;Búsqueda Full-Text;No;Baja;Medio;6;Baja;Bajo;Media;Bajo
+Sphinx;Búsqueda Full-Text;No;Alta;Bajo;7;Alta;Bajo;Alta;Bajo
+Amazon OpenSearch;Búsqueda Full-Text, Indexación;Sí;Alta;Bajo;8;Alta;Medio;Alta;Alto
+Google Cloud Search;Búsqueda Full-Text;Sí;Alta;Bajo;9;Alta;Medio;Alta;Medio
+Azure Cognitive Search;Búsqueda Full-Text, Indexación;Sí;Alta;Bajo;8;Alta;Medio;Alta;Medio
+Pinecone;Vectorial;Sí;Alta;Bajo;7;Alta;Medio;Alta;Bajo
+Weaviate;Vectorial;Sí;Alta;Bajo;7;Alta;Medio;Alta;Bajo
+Vespa;Vectorial, Mixto;Sí;Alta;Bajo;7;Alta;Medio;Alta;Bajo
+Milvus;Vectorial;Sí;Alta;Bajo;7;Alta;Medio;Alta;Bajo
+Faiss;Vectorial;Sí;Media;Bajo;6;Alta;Bajo;Alta;Bajo
+Annoy;Vectorial;No;Media;Bajo;6;Alta;Bajo;Alta;Bajo
+Spotify Annoy;Recomendación, Vectorial;Sí;Alta;Bajo;7;Alta;Medio;Alta;Bajo
+Google Recommendations AI;Recomendación;Sí;Alta;Bajo;8;Alta;Alto;Alta;Medio
+Amazon Personalize;Recomendación;Sí;Alta;Bajo;8;Alta;Alto;Alta;Medio
+Microsoft Personalizer;Recomendación;Sí;Alta;Bajo;8;Alta;Alto;Alta;Bajo
+Metarank;Recomendación;Sí;Media;Medio;6;Media;Bajo;Alta;Bajo
+RedisSearch;Búsqueda Full-Text, Indexación;No;Media;Bajo;7;Alta;Bajo;Alta;Medio
+Xapian;Búsqueda Full-Text;No;Media;Medio;6;Media;Bajo;Alta;Bajo
+Yacy;Búsqueda Full-Text;No;Baja;Medio;5;Baja;Bajo;Media;Bajo
+Manticore Search;Búsqueda Full-Text, Indexación;No;Media;Bajo;7;Media;Bajo;Alta;Bajo

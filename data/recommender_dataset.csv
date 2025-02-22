@@ -1,0 +1,11 @@
+Name,Category,Subcategory,Use Cases,Tech Stack Compatibility,Key Features,Pricing Model,Community & Support,Performance Considerations
+Next.js,Frontend,Rendering Framework,"Sitios Web Corporativos, SaaS","Firebase, AWS","SSR, SSG, API Routes",Open Source,"90K GitHub stars, Extensive Docs","SEO-friendly, Fast Builds"
+React,Frontend,UI Library,"Portafolios Personales, SaaS","Redux, GraphQL","Component-based, Hooks, Virtual DOM",Open Source,"200K GitHub stars, Large Community",Highly Performant
+Gatsby,Frontend,Static Site Generator,"Portafolios Personales, Blogs","Markdown, GraphQL","Pre-rendering, Fast builds",Open Source,"55K GitHub stars, Good Documentation",Optimized for Speed
+Node.js,Backend,Runtime Environment,"SaaS, API Development","Express, NestJS","Event-driven, Non-blocking I/O",Open Source,"100K GitHub stars, Large Ecosystem",High Concurrency
+Django,Backend,Web Framework,"CMS, API Development","PostgreSQL, Redis","MTV Pattern, ORM",Open Source,"70K GitHub stars, Secure & Scalable",Batteries Included
+PostgreSQL,Database,SQL,"Big Data, Analytics","Django, Rails","ACID Compliance, Extensibility",Open Source,"50K GitHub stars, Stable",Reliable & Scalable
+MongoDB,Database,NoSQL,"Marketplaces, SaaS","Mongoose, GraphQL","Document-based, Flexible Schema",Freemium,"40K GitHub stars, Scalable",Fast & Scalable
+Auth0,Authentication & Security,Identity Management,"Fintech, SaaS","OAuth, OpenID","Multi-factor Authentication, SSO",Paid,Trusted by Enterprises,Highly Secure
+Stripe,Payments & E-commerce,Payment Gateway,"E-commerce, SaaS","Node.js, React","API-based, Subscription Billing",Paid,"50K GitHub stars, Industry Standard",Reliable & Secure
+AWS,Cloud & Hosting,Cloud Provider,"Big Data, SaaS","Lambda, S3, EC2","Scalability, Pay-as-you-go",Paid,Enterprise-grade,Scalable & Reliable

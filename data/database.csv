@@ -1,0 +1,30 @@
+Herramienta,Modelo de Datos,ACID Compliance,Capacidad de Replicación,Soporte para Big Data,Facilidad de Consultas (1-10),Latencia de Lectura/Escritura,SQL/NoSQL,Distribuida/Centralizada,Escalabilidad,Coste,Seguridad,Nivel de Uso
+PostgreSQL,Relacional (SQL),Sí,Alta,No,7,Baja,SQL,Centralizada,Alta,Medio,Alta,Alto
+MySQL,Relacional (SQL),Sí,Alta,No,8,Baja,SQL,Centralizada,Alta,Bajo,Alta,Alto
+MongoDB,Documento (NoSQL),No,Alta,Sí,6,Alta,NoSQL,Distribuida,Alta,Medio,Alta,Medio
+Cassandra,Clave-Valor (NoSQL),No,Alta,Sí,5,Alta,NoSQL,Distribuida,Alta,Medio,Alta,Medio
+Oracle DB,Relacional (SQL),Sí,Alta,No,8,Baja,SQL,Centralizada,Alta,Alto,Alta,Alto
+Redis,Clave-Valor (NoSQL),No,Alta,No,9,Baja,NoSQL,Centralizada,Alta,Bajo,Alta,Alto
+Neo4j,Grafo (NoSQL),Sí,Alta,No,6,Baja,NoSQL,Centralizada,Alta,Medio,Alta,Medio
+Apache HBase,Columna (NoSQL),No,Alta,Sí,7,Alta,NoSQL,Distribuida,Alta,Medio,Alta,Bajo
+SQLite,Relacional (SQL),Sí,Baja,No,10,Baja,SQL,Centralizada,Baja,Bajo,Media,Alto
+Amazon Aurora,Relacional (SQL),Sí,Alta,No,8,Baja,SQL,Distribuida,Alta,Alto,Alta,Alto
+CockroachDB,Relacional (SQL),Sí,Alta,Sí,7,Baja,SQL,Distribuida,Alta,Medio,Alta,Medio
+RethinkDB,Documento (NoSQL),No,Alta,Sí,6,Media,NoSQL,Distribuida,Alta,Medio,Media,Bajo
+ArangoDB,Multi-model (NoSQL),Sí,Alta,Sí,7,Baja,NoSQL,Distribuida,Alta,Medio,Alta,Bajo
+MariaDB,Relacional (SQL),Sí,Alta,No,8,Baja,SQL,Centralizada,Alta,Bajo,Alta,Alto
+TimescaleDB,Time-series (SQL),Sí,Alta,Sí,7,Baja,SQL,Centralizada,Alta,Medio,Alta,Medio
+ElasticSearch,Documento (NoSQL),No,Alta,Sí,8,Media,NoSQL,Distribuida,Alta,Medio,Alta,Alto
+CouchDB,Documento (NoSQL),No,Alta,No,5,Alta,NoSQL,Distribuida,Alta,Bajo,Media,Medio
+Amazon DynamoDB,Clave-Valor (NoSQL),No,Alta,Sí,6,Baja,NoSQL,Distribuida,Alta,Alto,Alta,Alto
+IBM Db2,Relacional (SQL),Sí,Alta,No,8,Baja,SQL,Centralizada,Alta,Alto,Alta,Alto
+Vertica,Columna (SQL),Sí,Alta,Sí,7,Baja,SQL,Distribuida,Alta,Alto,Alta,Medio
+SQLite,Relacional (SQL),Sí,Baja,No,10,Baja,SQL,Centralizada,Baja,Bajo,Media,Alto
+TinkerPop,Grafo (NoSQL),Sí,Alta,No,6,Baja,NoSQL,Distribuida,Alta,Medio,Alta,Medio
+Google Bigtable,Columna (NoSQL),No,Alta,Sí,7,Alta,NoSQL,Distribuida,Alta,Medio,Alta,Bajo
+H2 Database,Relacional (SQL),Sí,Baja,No,9,Baja,SQL,Centralizada,Baja,Bajo,Media,Medio
+Amazon Redshift,Columna (SQL),Sí,Alta,Sí,8,Baja,SQL,Distribuida,Alta,Alto,Alta,Alto
+InfluxDB,Time-series (NoSQL),No,Alta,Sí,8,Baja,NoSQL,Distribuida,Alta,Medio,Alta,Medio
+FaunaDB,Relacional (NoSQL),Sí,Alta,Sí,7,Baja,NoSQL,Distribuida,Alta,Medio,Alta,Medio
+Couchbase,Documento (NoSQL),No,Alta,Sí,7,Alta,NoSQL,Distribuida,Alta,Medio,Alta,Alto
+MarkLogic,Multi-model (NoSQL),Sí,Alta,Sí,7,Baja,NoSQL,Distribuida,Alta,Alto,Alta,Medio

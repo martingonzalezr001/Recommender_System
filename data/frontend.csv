@@ -1,0 +1,26 @@
+Producto,Escalabilidad,Coste,Seguridad,Nivel de uso,Tipo,Lenguaje base,Uso principal,Dificultad inicial,Crecimiento de complejidad,SEO Friendly
+React,Alta,Gratis,Alta,Muy Alto,Framework,JavaScript,SPAs,4,8,5
+Vue.js,Media,Gratis,Alta,Alto,Framework,JavaScript,SPAs,3,5,5
+Angular,Alta,Gratis,Muy Alta,Alto,Framework,TypeScript,Enterprise Apps,7,7,8
+Svelte,Media,Gratis,Alta,Medio,Framework,JavaScript,SPAs,3,4,5
+Next.js,Alta,Freemium,Muy Alta,Alto,Framework,JavaScript,SSR y SSG,5,8,9
+Nuxt.js,Alta,Freemium,Muy Alta,Medio,Framework,JavaScript,SSR y SSG,5,8,9
+Gatsby,Media,Gratis,Alta,Medio,Static Site Generator,JavaScript,SSG,5,7,9
+Hugo,Alta,Gratis,Muy Alta,Bajo,Static Site Generator,Go,SSG,6,6,10
+Astro,Alta,Gratis,Alta,Medio,Static Site Generator,JavaScript,SSG,4,6,9
+Ember.js,Alta,Gratis,Alta,Bajo,Framework,JavaScript,Enterprise Apps,7,7,5
+Alpine.js,Media,Gratis,Alta,Bajo,JS Framework,JavaScript,Interactividad ligera,2,3,3
+Stencil,Alta,Gratis,Alta,Bajo,Compiler,TypeScript,Web Components,5,6,5
+Preact,Alta,Gratis,Alta,Medio,Framework,JavaScript,SPAs,3,5,5
+Lit,Alta,Gratis,Alta,Bajo,Library,JavaScript,Web Components,4,5,5
+Solid.js,Media,Gratis,Alta,Bajo,Framework,JavaScript,SPAs,6,7,5
+Qwik,Alta,Gratis,Muy Alta,Bajo,Framework,JavaScript,Resumable Apps,7,8,9
+Bootstrap,Media,Gratis,Alta,Muy Alto,UI Framework,CSS,Componentes UI,3,4,3
+Tailwind CSS,Alta,Gratis,Alta,Muy Alto,Utility-First CSS,CSS,Estilos personalizados,4,5,3
+Material-UI,Alta,Gratis,Alta,Alto,UI Framework,JavaScript,Google Material Design,3,5,5
+Chakra UI,Media,Gratis,Alta,Medio,UI Framework,JavaScript,Componentes UI,3,5,5
+Bulma,Media,Gratis,Alta,Bajo,UI Framework,CSS,Componentes UI,2,3,3
+Ant Design,Alta,Gratis,Alta,Medio,UI Framework,JavaScript,Enterprise UI,4,6,5
+Foundation,Media,Gratis,Alta,Bajo,UI Framework,CSS,Responsive Design,3,4,3
+UIkit,Media,Gratis,Alta,Bajo,UI Framework,CSS,Componentes UI,3,4,3
+

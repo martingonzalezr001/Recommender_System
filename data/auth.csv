@@ -1,0 +1,25 @@
+Producto,Escalabilidad,Coste,Seguridad,Nivel de uso,Tipo de autenticación,SSO,Cumplimiento normativo,Métodos de cifrado,Facilidad de integración,Protección contra ataques comunes
+Auth0,Alta,Freemium,Muy Alta,Alto,OAuth, SAML, OpenID Connect,Sí,GDPR, SOC 2,AES-256,  RSA,9,Protección contra XSS, CSRF, SQL Injection
+Okta,Alta,Pago,Muy Alta,Alto,OAuth, SAML,Sí,GDPR, HIPAA,AES-256,10,Protección contra XSS, CSRF, Phishing
+Firebase Authentication,Alta,Gratis,Muy Alta,Alto,OAuth, JWT,Multi-factor,Sí,GDPR,AES-256,8,Protección contra CSRF, Brute Force
+AWS Cognito,Alta,Freemium,Muy Alta,Alto,OAuth, SAML, JWT,Sí,GDPR, HIPAA,AES-256,  RSA,7,Protección contra XSS, CSRF, Phishing
+Keycloak,Alta,Gratis,Muy Alta,Medio,OAuth, SAML, OpenID Connect,Sí,GDPR,AES-256,7,Protección contra CSRF, SQL Injection
+Microsoft Azure AD,Alta,Pago,Muy Alta,Alto,OAuth, SAML,Sí,GDPR, HIPAA, SOC 2,AES-256,9,Protección contra Brute Force, Phishing
+Google Identity Platform,Alta,Freemium,Muy Alta,Alto,OAuth, JWT,Sí,GDPR,AES-256,9,Protección contra CSRF, Phishing
+OneLogin,Alta,Pago,Muy Alta,Medio,OAuth, SAML,Sí,GDPR, HIPAA,AES-256,8,Protección contra XSS, CSRF
+Authy,Media,Freemium,Alta,Medio,Multi-factor,Sí,GDPR,AES-256,7,Protección contra Brute Force, Phishing
+Duo Security,Alta,Pago,Muy Alta,Alto,Multi-factor,Sí,GDPR, HIPAA,AES-256,10,Protección contra Phishing, Brute Force
+Ping Identity,Alta,Pago,Muy Alta,Medio,OAuth, SAML,Sí,GDPR, SOC 2,AES-256,8,Protección contra CSRF, Brute Force
+Centrify,Alta,Pago,Muy Alta,Bajo,OAuth, SAML,Sí,GDPR, HIPAA,AES-256,7,Protección contra XSS, SQL Injection
+Stormpath,Media,Gratis,Alta,Bajo,OAuth, JWT,Sí,GDPR,AES-256,6,Protección contra CSRF
+JumpCloud,Alta,Pago,Muy Alta,Medio,OAuth, SAML,Sí,GDPR, SOC 2,AES-256,8,Protección contra Phishing, XSS
+SecureAuth,Alta,Pago,Muy Alta,Bajo,Multi-factor,Sí,GDPR, HIPAA,AES-256,7,Protección contra Brute Force, CSRF
+RSA SecureID,Alta,Pago,Muy Alta,Medio,Multi-factor,Sí,GDPR, SOC 2,RSA, AES-256,6,Protección contra Brute Force
+Bitwarden,Media,Gratis,Alta,Medio,Password Manager,Sí,GDPR,AES-256,8,Protección contra Brute Force
+1Password,Alta,Pago,Muy Alta,Alto,Password Manager,Sí,GDPR, SOC 2,AES-256,9,Protección contra Phishing
+LastPass,Alta,Pago,Muy Alta,Alto,Password Manager,Sí,GDPR, HIPAA,AES-256,9,Protección contra Phishing, Brute Force
+NordPass,Media,Pago,Alta,Medio,Password Manager,Sí,GDPR,AES-256,8,Protección contra Phishing
+Yubico,Alta,Pago,Muy Alta,Medio,Hardware Token,Sí,GDPR, SOC 2,AES-256,6,Protección contra Phishing
+Ubiquiti UniFi Protect,Media,Pago,Alta,Bajo,Surveillance Security,Sí,GDPR,AES-256,6,Protección contra Unauthorized Access
+Vault by HashiCorp,Alta,Gratis,Muy Alta,Medio,Secrets Management,Sí,GDPR, HIPAA,AES-256,7,Protección contra Data Breaches
+CyberArk,Alta,Pago,Muy Alta,Bajo,Privileged Access Management,Sí,GDPR, SOC 2,AES-256,7,Protección contra Unauthorized Access

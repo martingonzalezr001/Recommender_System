@@ -1,0 +1,25 @@
+Producto,Escalabilidad,Coste,Seguridad,Nivel de uso,Tipo,Lenguaje base,Uso principal,Dificultad inicial,Crecimiento de complejidad,Arquitectura,Soporte para concurrencia,Tiempo de respuesta,Ecosistema de integraciones,Soporte para WebSockets,Capacidad de procesamiento en paralelo
+Node.js,Alta,Gratis,Media,Muy Alto,Runtime,JavaScript,APIs y Servidores,4,7,Microservicios,Alta,Rápido,Amplio,Sí,Alta
+Django,Alta,Gratis,Alta,Alto,Framework,Python,Web Apps,5,6,Monolítica,Media,Medio,Amplio,Sí,Media
+Ruby on Rails,Media,Gratis,Media,Medio,Framework,Ruby,Web Apps,5,6,Monolítica,Media,Medio,Medio,No,Media
+Laravel,Alta,Gratis,Alta,Alto,Framework,PHP,Web Apps,4,6,Monolítica,Media,Medio,Medio,No,Media
+Spring Boot,Alta,Gratis,Muy Alta,Alto,Framework,Java,Microservicios,6,7,Microservicios,Alta,Rápido,Amplio,Sí,Alta
+Express.js,Alta,Gratis,Media,Muy Alto,Framework,JavaScript,APIs y Servidores,3,5,Microservicios,Alta,Rápido,Amplio,Sí,Alta
+FastAPI,Alta,Gratis,Alta,Medio,Framework,Python,APIs,4,5,Microservicios,Alta,Rápido,Amplio,Sí,Alta
+Flask,Media,Gratis,Media,Medio,Framework,Python,Microservicios,3,5,Monolítica,Media,Medio,Medio,No,Media
+NestJS,Alta,Gratis,Alta,Medio,Framework,TypeScript,Backend Escalable,4,6,Microservicios,Alta,Rápido,Amplio,Sí,Alta
+Koa.js,Media,Gratis,Media,Bajo,Framework,JavaScript,Middleware,3,5,Microservicios,Alta,Rápido,Medio,Sí,Alta
+Hapi.js,Media,Gratis,Alta,Bajo,Framework,JavaScript,API Services,4,6,Microservicios,Alta,Rápido,Medio,Sí,Media
+Meteor,Media,Gratis,Media,Bajo,Framework,JavaScript,Full-stack,4,6,Monolítica,Media,Medio,Medio,Sí,Media
+Strapi,Alta,Gratis,Alta,Medio,Headless CMS,JavaScript,API-first,4,5,Monolítica,Media,Medio,Amplio,No,Media
+AdonisJS,Media,Gratis,Alta,Bajo,Framework,JavaScript,MVC Backend,4,5,Monolítica,Media,Medio,Medio,No,Media
+Blitz.js,Media,Gratis,Media,Bajo,Framework,JavaScript,Full-stack,4,6,Monolítica,Media,Medio,Medio,No,Media
+Serverless Framework,Alta,Gratis,Muy Alta,Alto,Tool,Multi-cloud,Serverless,5,7,Serverless,Alta,Rápido,Amplio,No,Alta
+LoopBack,Alta,Gratis,Alta,Medio,Framework,JavaScript,API-first,4,6,Microservicios,Alta,Rápido,Amplio,Sí,Alta
+Actix Web,Alta,Gratis,Muy Alta,Bajo,Framework,Rust,Web Services,5,7,Microservicios,Alta,Rápido,Medio,Sí,Alta
+Fiber,Alta,Gratis,Alta,Bajo,Framework,Go,High-performance Web,4,6,Microservicios,Alta,Rápido,Medio,Sí,Alta
+Golang Gin,Alta,Gratis,Alta,Medio,Framework,Go,Web Services,4,6,Microservicios,Alta,Rápido,Medio,Sí,Alta
+Phoenix,Alta,Gratis,Muy Alta,Bajo,Framework,Elixir,Scalable Apps,5,7,Microservicios,Alta,Rápido,Amplio,Sí,Alta
+AWS Lambda,Alta,Freemium,Muy Alta,Alto,Serverless,AWS,Event-driven,5,7,Serverless,Alta,Rápido,Amplio,No,Alta
+Cloudflare Workers,Alta,Freemium,Muy Alta,Medio,Serverless,JavaScript,Edge Computing,4,6,Serverless,Alta,Rápido,Medio,No,Alta
+Vercel Functions,Alta,Freemium,Alta,Alto,Serverless,JavaScript,SSR y API,4,6,Serverless,Alta,Rápido,Amplio,No,Alta

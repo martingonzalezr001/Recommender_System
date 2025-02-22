@@ -1,0 +1,26 @@
+Proveedor,Tipo de Servicio,Soporte para Contenedores,Autoescalado,Disponibilidad (SLA),Regiones Disponibles,Escalabilidad,Coste,Seguridad,Nivel de Uso
+AWS,IaaS,Sí,Sí,99.99%,Global,Alta,Medio,Alta,Alto
+Google Cloud,IaaS,Sí,Sí,99.95%,Global,Alta,Medio,Alta,Alto
+Microsoft Azure,IaaS,Sí,Sí,99.99%,Global,Alta,Medio,Alta,Alto
+Heroku,PaaS,Sí,Sí,99.95%,Global,Media,Medio,Alta,Medio
+DigitalOcean,IaaS,Sí,Sí,99.9%,Global,Media,Bajo,Media,Medio
+Linode,IaaS,Sí,Sí,99.9%,Global,Media,Bajo,Media,Medio
+IBM Cloud,IaaS,Sí,Sí,99.9%,Global,Media,Medio,Alta,Bajo
+Alibaba Cloud,IaaS,Sí,Sí,99.95%,Global,Alta,Bajo,Alta,Medio
+OVH Cloud,IaaS,Sí,Sí,99.9%,Global,Media,Bajo,Media,Bajo
+Vultr,IaaS,Sí,Sí,99.9%,Global,Media,Bajo,Media,Bajo
+Cloudflare Workers,SaaS,No,Sí,99.99%,Global,Alta,Medio,Alta,Alto
+Netlify,PaaS,No,Sí,99.95%,Global,Media,Medio,Alta,Medio
+Vercel,PaaS,No,Sí,99.9%,Global,Media,Medio,Alta,Medio
+Render,PaaS,Sí,Sí,99.9%,Global,Media,Bajo,Media,Medio
+Scaleway,IaaS,Sí,Sí,99.9%,Limitado,Media,Bajo,Media,Bajo
+Fly.io,PaaS,Sí,Sí,99.9%,Global,Media,Medio,Alta,Bajo
+Kinsta,PaaS,No,Sí,99.9%,Global,Media,Medio,Alta,Bajo
+Fastly,SaaS,No,Sí,99.99%,Global,Alta,Medio,Alta,Medio
+StackPath,SaaS,No,Sí,99.95%,Global,Media,Medio,Alta,Bajo
+Oracle Cloud,IaaS,Sí,Sí,99.95%,Global,Alta,Medio,Alta,Bajo
+Hetzner Cloud,IaaS,Sí,Sí,99.9%,Limitado,Media,Bajo,Media,Bajo
+Tencent Cloud,IaaS,Sí,Sí,99.9%,Global,Alta,Bajo,Alta,Bajo
+UpCloud,IaaS,Sí,Sí,99.9%,Limitado,Media,Bajo,Media,Bajo
+GreenGeeks,PaaS,No,Sí,99.9%,Global,Media,Medio,Alta,Bajo
+Kubernetes,IaaS,Sí,Sí,99.99%,Global,Alta,Medio,Alta,Alto

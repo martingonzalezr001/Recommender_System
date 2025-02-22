@@ -1,0 +1,26 @@
+Herramienta,Escalabilidad,Coste,Seguridad,Nivel de uso,Tipo de Almacenamiento,Soporte para Streaming,Latencia de Acceso,Capacidad de Retención,Facilidad de Integración
+Amazon S3,Alta,Medio,Alta,Alta,Object Storage,Sí,Baja,Alta,9
+Google Cloud Storage,Alta,Medio,Alta,Alta,Object Storage,Sí,Baja,Alta,8
+Azure Blob Storage,Alta,Medio,Alta,Alta,Object Storage,Sí,Baja,Alta,8
+Dropbox,Media,Medio,Media,Alta,Archivos,No,Media,Media,7
+Box,Media,Medio,Media,Media,Archivos,No,Media,Media,7
+Cloudflare CDN,Alta,Bajo,Alta,Alta,CDN,No,Baja,Media,9
+Akamai CDN,Alta,Alto,Alta,Alta,CDN,No,Baja,Media,8
+Fastly CDN,Alta,Medio,Alta,Alta,CDN,No,Baja,Media,8
+Backblaze B2,Media,Bajo,Media,Media,Object Storage,No,Media,Media,7
+Wasabi,Alta,Bajo,Alta,Media,Object Storage,No,Media,Alta,8
+DigitalOcean Spaces,Media,Medio,Media,Media,Object Storage,No,Media,Media,7
+IBM Cloud Object Storage,Alta,Medio,Alta,Media,Object Storage,No,Media,Alta,8
+Oracle Cloud Storage,Alta,Medio,Alta,Media,Object Storage,No,Media,Alta,8
+Alibaba Cloud OSS,Alta,Medio,Alta,Media,Object Storage,No,Media,Alta,8
+Rackspace Cloud Files,Media,Medio,Media,Media,Object Storage,No,Media,Media,7
+MinIO,Alta,Gratis,Alta,Media,Object Storage,No,Media,Alta,9
+Netlify,Media,Medio,Media,Media,CDN,No,Media,Media,7
+Vercel,Media,Medio,Media,Media,CDN,No,Media,Media,7
+Firebase Storage,Alta,Medio,Alta,Alta,Object Storage,Sí,Baja,Alta,8
+MediaFire,Media,Bajo,Media,Media,Archivos,No,Media,Media,6
+pCloud,Media,Medio,Media,Media,Archivos,No,Media,Media,7
+Sync.com,Media,Medio,Media,Media,Archivos,No,Media,Media,7
+Mega,Media,Bajo,Media,Media,Archivos,No,Media,Media,6
+Tresorit,Media,Alto,Alta,Media,Archivos,No,Media,Media,8
+SpiderOak,Media,Medio,Alta,Media,Archivos,No,Media,Media,7

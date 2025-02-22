@@ -1,0 +1,26 @@
+Nombre,Tipo de herramienta,Soporte para Contenedores,Integración con Proveedores Cloud,Facilidad de Configuración,Escalado Automático,Escalabilidad,Coste,Seguridad,Nivel de Uso
+Jenkins,CI/CD,Sí,Multi-cloud,6,Sí,Alta,Bajo,Alta,Alto
+GitHub Actions,CI/CD,Sí,Multi-cloud,8,Sí,Alta,Bajo,Alta,Alto
+GitLab CI/CD,CI/CD,Sí,Multi-cloud,7,Sí,Alta,Bajo,Alta,Alto
+CircleCI,CI/CD,Sí,Multi-cloud,7,Sí,Alta,Medio,Alta,Medio
+Travis CI,CI/CD,Sí,Multi-cloud,6,Sí,Alta,Medio,Alta,Medio
+Bitbucket Pipelines,CI/CD,Sí,Multi-cloud,7,Sí,Media,Medio,Alta,Medio
+Azure DevOps,CI/CD,Sí,Azure,7,Sí,Alta,Medio,Alta,Alto
+AWS CodePipeline,CI/CD,Sí,AWS,7,Sí,Alta,Medio,Alta,Alto
+Google Cloud Build,CI/CD,Sí,Google Cloud,7,Sí,Alta,Medio,Alta,Medio
+ArgoCD,Orquestación,Sí,Multi-cloud,6,Sí,Alta,Bajo,Alta,Medio
+Spinnaker,Orquestación,Sí,Multi-cloud,5,Sí,Alta,Medio,Alta,Bajo
+Tekton,CI/CD,Sí,Multi-cloud,5,Sí,Alta,Bajo,Alta,Bajo
+Drone CI,CI/CD,Sí,Multi-cloud,6,Sí,Alta,Bajo,Alta,Bajo
+TeamCity,CI/CD,Sí,Multi-cloud,5,Sí,Media,Medio,Alta,Bajo
+Ansible,Automatización,No,Multi-cloud,8,No,Alta,Bajo,Alta,Alto
+Terraform,Infraestructura como Código,No,Multi-cloud,7,Sí,Alta,Bajo,Alta,Alto
+Pulumi,Infraestructura como Código,No,Multi-cloud,7,Sí,Alta,Bajo,Alta,Medio
+Chef,Gestion de Configuración,No,Multi-cloud,6,No,Alta,Medio,Alta,Bajo
+Puppet,Gestion de Configuración,No,Multi-cloud,6,No,Alta,Medio,Alta,Bajo
+SaltStack,Gestion de Configuración,No,Multi-cloud,6,No,Alta,Bajo,Alta,Bajo
+Kubernetes,Orquestación,Sí,Multi-cloud,5,Sí,Alta,Bajo,Alta,Alto
+OpenShift,Orquestación,Sí,Multi-cloud,6,Sí,Alta,Medio,Alta,Medio
+Nomad,Orquestación,Sí,Multi-cloud,6,Sí,Alta,Bajo,Alta,Bajo
+Rancher,Orquestación,Sí,Multi-cloud,6,Sí,Alta,Bajo,Alta,Bajo
+Docker Swarm,Orquestación,Sí,Multi-cloud,6,Sí,Alta,Bajo,Alta,Bajo
