@@ -4,6 +4,32 @@ def special_internal_function(value):
     return value
 
 
+# Ejecuto esta funcion para que el modelo no gaste tokens leyendo todos los datasets en cada peticion
+def filter_data(ar1,ar2):
+
+    # Recorro el primer array
+    for i in range(len(ar1)):
+
+
+        for i in range(len(ar2)):
+            # Para que cuando se acabe el primer array no de error
+            if i < len(ar1):
+                # Aquí accedo a los valores de los diccionarios para poder compararlo con el string primer array
+                for key, value in ar2[i].items():
+
+                    # Comparo la clave del diccionario con el string del primer array
+                    if ar1[i] == key:
+                        value = True
+                        # Se iguala a True para cuando haya que hacer el filtrado
+                        ar2[i] = {key:value}
+            else:
+                break
+
+    return ar2
+    
+
+
+
 st.markdown(
     f"""<h1 style='text-align: center; font-size: 28px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>¡Bienvenido a la plataforma de ideas de proyectos!</h1>""",
     unsafe_allow_html=True,
@@ -18,6 +44,10 @@ with st.form("my_form"):
     submitted = st.form_submit_button(label="Enviar", help=None, on_click=None, args=None, kwargs=None, type="secondary", icon=None, disabled=False, use_container_width=False)
 
     parameter_list = []
+    checkbox_list = []
+    dataset_list = []
+    dataset_prelist = [{"Front-End":False}, {"Back-End":False}, {"Database":False}, {"Auth":False}, {"Ecommerce":False}, {"CloudHosting":False}, {"CD/CI DevOps":False}, {"Message":False}, {"Search Engine":False}, {"Media Storage":False}]
+    
 
     # Bloque Front
 checkbox_front = st.checkbox("Front-End", key="front-End")
@@ -39,6 +69,7 @@ if checkbox_front:
     
     front_list = [{"Escalabilidad":escalabilidad_front},{ "Nivel de Uso":nivel_uso_front}, {"Coste":coste_front}, {"Seguridad":seguridad_front}] 
     parameter_list.append(front_list)
+    checkbox_list.append({"Front-End":checkbox_front})
 
 
 # Bloque Back
@@ -61,6 +92,7 @@ if checkbox_back:
 
     back_list = [{"Escalabilidad":escalabilidad_back},{ "Nivel de Uso":nivel_uso_back}, {"Coste":coste_back}, {"Seguridad":seguridad_back}] 
     parameter_list.append(back_list)
+    checkbox_list.append({"Back-End":checkbox_back})
 
 # Bloque Database
 checkbox_database = st.checkbox("Database", key="database")
@@ -82,6 +114,7 @@ if checkbox_database:
 
     database_list = [{"Escalabilidad":escalabilidad_database},{ "Nivel de Uso":nivel_uso_database}, {"Coste":coste_database}, {"Seguridad":seguridad_database}]  
     parameter_list.append(database_list)
+    checkbox_list.append({"Database":checkbox_database})
 
 # Bloque Authentication
 checkbox_auth = st.checkbox("Authentication", key="authentication")
@@ -103,6 +136,7 @@ if checkbox_auth:
 
     auth_list = [{"Escalabilidad":escalabilidad_auth},{ "Nivel de Uso":nivel_uso_auth}, {"Coste":coste_auth}, {"Seguridad":seguridad_auth}]
     parameter_list.append(auth_list)
+    checkbox_list.append({"Auth":checkbox_auth})
 
 # Bloque E-commerce
 checkbox_ecommerce = st.checkbox("E-Commerce", key="e-Commerce")
@@ -124,6 +158,7 @@ if checkbox_ecommerce:
 
     ecommerce_list = [{"Escalabilidad":escalabilidad_ecommerce},{ "Nivel de Uso":nivel_uso_ecommerce}, {"Coste":coste_ecommerce}, {"Seguridad":seguridad_ecommerce}]
     parameter_list.append(ecommerce_list)
+    checkbox_list.append({"Ecommerce":checkbox_ecommerce})
 
 # Bloque CloudHosting
 checkbox_cloud_hosting = st.checkbox("CloudHosting", key="cloud_hosting")
@@ -145,6 +180,7 @@ if checkbox_cloud_hosting:
 
     cloud_hosting_list = [{"Escalabilidad":escalabilidad_cloud_hosting},{ "Nivel de Uso":nivel_uso_cloud_hosting}, {"Coste":coste_cloud_hosting}, {"Seguridad":seguridad_cloud_hosting}]
     parameter_list.append(cloud_hosting_list)
+    checkbox_list.append({"CloudHosting":checkbox_cloud_hosting})
 
 # Bloque CD/CI & DevOps
 checkbox_cdci_devops = st.checkbox("CD/CI & DevOps", key="cd/ci_devOps")
@@ -166,6 +202,7 @@ if checkbox_cdci_devops:
 
     cdci_devops_list = [{"Escalabilidad":escalabilidad_cdci_devops},{ "Nivel de Uso":nivel_uso_cdci_devops}, {"Coste":coste_cdci_devops}, {"Seguridad":seguridad_cdci_devops}]
     parameter_list.append(cdci_devops_list)
+    checkbox_list.append({"CD/CI DevOps":checkbox_cdci_devops})
 
 # Bloque Message Service
 checkbox_msg = st.checkbox("Message Service", key="message_service")
@@ -188,6 +225,7 @@ if checkbox_msg:
     
     msg_list = [{"Escalabilidad":escalabilidad_msg},{ "Nivel de Uso":nivel_uso_msg}, {"Coste":coste_msg}, {"Seguridad":seguridad_msg}]
     parameter_list.append(msg_list)
+    checkbox_list.append({"Message":checkbox_msg})
 
 # Bloque Search Engine
 checkbox_search_engine = st.checkbox("Search Engine", key="search_engine") 
@@ -209,6 +247,7 @@ if checkbox_search_engine:
 
     search_engine_list = [{"Escalabilidad":escalabilidad_search_engine},{ "Nivel de Uso":nivel_uso_search_engine}, {"Coste":coste_search_engine}, {"Seguridad":seguridad_search_engine}]
     parameter_list.append(search_engine_list)
+    checkbox_list.append({"Search Engine":checkbox_search_engine})
 
 # Bloque media_storage
 
@@ -231,14 +270,27 @@ if checkbox_media_storage:
 
     media_storage_list = [{"Escalabilidad":escalabilidad_media_storage},{ "Nivel de Uso":nivel_uso_media_storage}, {"Coste":coste_media_storage}, {"Seguridad":seguridad_media_storage}]
     parameter_list.append(media_storage_list)
+    checkbox_list.append({"Media Storage":checkbox_media_storage})
 
 
     # Every form must have a submit button.
+
+
+
     
 if submitted:
-    st.write(idea)
-    for x in parameter_list:
-        st.write(x)
+
+    prompt = "Idea: " + idea + "\n Parámetros: " + str(parameter_list) 
+    st.write(prompt)
+    for x in range(len(checkbox_list)):
+        for key in checkbox_list[x]:
+            if checkbox_list[x][key]:
+                st.write(key)
+                dataset_list.append(key)
+    st.write(dataset_list)
+    st.write(dataset_prelist)
+    st.write(filter_data(dataset_list,dataset_prelist))
+        
          
 
     
