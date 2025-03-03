@@ -1,4 +1,11 @@
 import streamlit as st
+import pandas as pd
+
+
+
+
+urls_list = ["../data/front-end.csv", "../data/back-end.csv", "../data/database.csv", "../data/auth.csv", "../data/ecommerce.csv", "../data/cloudhosting.csv", "../data/cicd devops.csv", "../data/message.csv", "../data/search engine.csv", "../data/media storage.csv"]
+
 
 def special_internal_function(value):
     return value
@@ -24,8 +31,33 @@ def filter_data(ar1,ar2):
                         ar2[i] = {key:value}
             else:
                 break
+ 
 
     return ar2
+
+
+
+def get_data_filtered(arUrl, arParameter):
+    data_to_read = []
+    # La data que le pasemos finalmente al modelo
+
+    for h in arUrl:
+        for i in range(len(arParameter)):
+
+            arParameter[i] = arParameter[i].lower()
+            if arParameter[i] in h:
+                st.write("Parametro a comparar: " + arParameter[i])
+                st.write("Url a comparar: " + h)
+                data_to_read.append(h)
+            
+    return data_to_read
+
+def read_data(data_to_read):
+    data = []
+    for i in range(len(data_to_read)):
+        data.append(pd.read_csv(data_to_read[i]))
+    return data
+
     
 
 
@@ -43,10 +75,10 @@ with st.form("my_form"):
 
     submitted = st.form_submit_button(label="Enviar", help=None, on_click=None, args=None, kwargs=None, type="secondary", icon=None, disabled=False, use_container_width=False)
 
-    parameter_list = []
+    subparameter_list = []
     checkbox_list = []
     dataset_list = []
-    dataset_prelist = [{"Front-End":False}, {"Back-End":False}, {"Database":False}, {"Auth":False}, {"Ecommerce":False}, {"CloudHosting":False}, {"CD/CI DevOps":False}, {"Message":False}, {"Search Engine":False}, {"Media Storage":False}]
+    dataset_prelist = [{"Front-End":False}, {"Back-End":False}, {"Database":False}, {"Auth":False}, {"Ecommerce":False}, {"CloudHosting":False}, {"Ci CD DevOps":False}, {"Message":False}, {"Search Engine":False}, {"Media Storage":False}]
     
 
     # Bloque Front
@@ -68,7 +100,7 @@ if checkbox_front:
     
     
     front_list = [{"Escalabilidad":escalabilidad_front},{ "Nivel de Uso":nivel_uso_front}, {"Coste":coste_front}, {"Seguridad":seguridad_front}] 
-    parameter_list.append(front_list)
+    subparameter_list.append(front_list)
     checkbox_list.append({"Front-End":checkbox_front})
 
 
@@ -80,7 +112,7 @@ if checkbox_back:
 
     # Crear cada columna con su select
     with col_escalabilidad_back:
-        escalabilidad_back = st.selectbox("Escalabilidad:", ["N/A", "Alta", "Media", "Baja"], key="escalabilidad_back")
+        escalabilidad_back = st.selectbox("Escalabilidad " , ["N/A", "Alta", "Media", "Baja"], key="escalabilidad_back")
     with col_nivel_uso_back:
         nivel_uso_back = st.selectbox("Nivel de uso:", ["N/A", "Sencillo", "Intermedio", "Difícil"], key="nivel_uso_back")
 
@@ -91,7 +123,7 @@ if checkbox_back:
         seguridad_back = st.selectbox("Seguridad:", ["N/A", "Alta", "Media", "Básica"], key="seguridad_back")
 
     back_list = [{"Escalabilidad":escalabilidad_back},{ "Nivel de Uso":nivel_uso_back}, {"Coste":coste_back}, {"Seguridad":seguridad_back}] 
-    parameter_list.append(back_list)
+    subparameter_list.append(back_list)
     checkbox_list.append({"Back-End":checkbox_back})
 
 # Bloque Database
@@ -113,7 +145,7 @@ if checkbox_database:
         seguridad_database = st.selectbox("Seguridad:", ["N/A", "Alta", "Media", "Básica"], key="seguridad_database")
 
     database_list = [{"Escalabilidad":escalabilidad_database},{ "Nivel de Uso":nivel_uso_database}, {"Coste":coste_database}, {"Seguridad":seguridad_database}]  
-    parameter_list.append(database_list)
+    subparameter_list.append(database_list)
     checkbox_list.append({"Database":checkbox_database})
 
 # Bloque Authentication
@@ -135,7 +167,7 @@ if checkbox_auth:
         seguridad_auth = st.selectbox("Seguridad:", ["N/A", "Alta", "Media", "Básica"], key="seguridad_auth")
 
     auth_list = [{"Escalabilidad":escalabilidad_auth},{ "Nivel de Uso":nivel_uso_auth}, {"Coste":coste_auth}, {"Seguridad":seguridad_auth}]
-    parameter_list.append(auth_list)
+    subparameter_list.append(auth_list)
     checkbox_list.append({"Auth":checkbox_auth})
 
 # Bloque E-commerce
@@ -146,7 +178,7 @@ if checkbox_ecommerce:
 
     # Crear cada columna con su select
     with col_escalabilidad_ecommerce:
-        escalabilidad_ecommerce = st.selectbox("Escalabilidad:", ["N/A", "Alta", "Media", "Baja"], key="escalabilidad_ecommerce")
+        escalabilidad_ecommerce = st.selectbox("Escalabilidad :", ["N/A", "Alta", "Media", "Baja"], key="escalabilidad_ecommerce")
     with col_nivel_uso_ecommerce:
         nivel_uso_ecommerce = st.selectbox("Nivel de uso:", ["N/A", "Sencillo", "Intermedio", "Difícil"], key="nivel_uso_ecommerce")
 
@@ -157,7 +189,7 @@ if checkbox_ecommerce:
         seguridad_ecommerce = st.selectbox("Seguridad:", ["N/A", "Alta", "Media", "Básica"], key="seguridad_ecommerce")
 
     ecommerce_list = [{"Escalabilidad":escalabilidad_ecommerce},{ "Nivel de Uso":nivel_uso_ecommerce}, {"Coste":coste_ecommerce}, {"Seguridad":seguridad_ecommerce}]
-    parameter_list.append(ecommerce_list)
+    subparameter_list.append(ecommerce_list)
     checkbox_list.append({"Ecommerce":checkbox_ecommerce})
 
 # Bloque CloudHosting
@@ -179,7 +211,7 @@ if checkbox_cloud_hosting:
         seguridad_cloud_hosting = st.selectbox("Seguridad:", ["N/A", "Alta", "Media", "Básica"], key="seguridad_cloud_hosting")
 
     cloud_hosting_list = [{"Escalabilidad":escalabilidad_cloud_hosting},{ "Nivel de Uso":nivel_uso_cloud_hosting}, {"Coste":coste_cloud_hosting}, {"Seguridad":seguridad_cloud_hosting}]
-    parameter_list.append(cloud_hosting_list)
+    subparameter_list.append(cloud_hosting_list)
     checkbox_list.append({"CloudHosting":checkbox_cloud_hosting})
 
 # Bloque CD/CI & DevOps
@@ -201,7 +233,7 @@ if checkbox_cdci_devops:
         seguridad_cdci_devops = st.selectbox("Seguridad:", ["N/A", "Alta", "Media", "Básica"], key="seguridad_cdci_devops")
 
     cdci_devops_list = [{"Escalabilidad":escalabilidad_cdci_devops},{ "Nivel de Uso":nivel_uso_cdci_devops}, {"Coste":coste_cdci_devops}, {"Seguridad":seguridad_cdci_devops}]
-    parameter_list.append(cdci_devops_list)
+    subparameter_list.append(cdci_devops_list)
     checkbox_list.append({"CD/CI DevOps":checkbox_cdci_devops})
 
 # Bloque Message Service
@@ -224,7 +256,7 @@ if checkbox_msg:
         seguridad_msg = st.selectbox("Seguridad:", ["N/A", "Alta", "Media", "Básica"], key="seguridad_msg")
     
     msg_list = [{"Escalabilidad":escalabilidad_msg},{ "Nivel de Uso":nivel_uso_msg}, {"Coste":coste_msg}, {"Seguridad":seguridad_msg}]
-    parameter_list.append(msg_list)
+    subparameter_list.append(msg_list)
     checkbox_list.append({"Message":checkbox_msg})
 
 # Bloque Search Engine
@@ -246,7 +278,7 @@ if checkbox_search_engine:
         seguridad_search_engine = st.selectbox("Seguridad:", ["N/A", "Alta", "Media", "Básica"], key="seguridad_search_engine")
 
     search_engine_list = [{"Escalabilidad":escalabilidad_search_engine},{ "Nivel de Uso":nivel_uso_search_engine}, {"Coste":coste_search_engine}, {"Seguridad":seguridad_search_engine}]
-    parameter_list.append(search_engine_list)
+    subparameter_list.append(search_engine_list)
     checkbox_list.append({"Search Engine":checkbox_search_engine})
 
 # Bloque media_storage
@@ -269,28 +301,39 @@ if checkbox_media_storage:
         seguridad_media_storage = st.selectbox("Seguridad:", ["N/A", "Alta", "Media", "Básica"], key="seguridad_media_storage")
 
     media_storage_list = [{"Escalabilidad":escalabilidad_media_storage},{ "Nivel de Uso":nivel_uso_media_storage}, {"Coste":coste_media_storage}, {"Seguridad":seguridad_media_storage}]
-    parameter_list.append(media_storage_list)
+    subparameter_list.append(media_storage_list)
     checkbox_list.append({"Media Storage":checkbox_media_storage})
 
-
     # Every form must have a submit button.
-
-
-
     
 if submitted:
 
-    prompt = "Idea: " + idea + "\n Parámetros: " + str(parameter_list) 
-    st.write(prompt)
     for x in range(len(checkbox_list)):
         for key in checkbox_list[x]:
             if checkbox_list[x][key]:
-                st.write(key)
                 dataset_list.append(key)
-    st.write(dataset_list)
-    st.write(dataset_prelist)
-    st.write(filter_data(dataset_list,dataset_prelist))
-        
-         
-
     
+    filtered_data = (filter_data(dataset_list,dataset_prelist))
+    data_to_read = get_data_filtered(urls_list,dataset_list)
+    data = read_data(data_to_read)
+ 
+    # Transformamos los subparametros al diccionario cuya clave sea el sector al que pertenecen
+    subparameter_dict = {
+    dataset_list[i]: {list(d.keys())[0]: list(d.values())[0] for d in subparameter_list[i]}
+    for i in range(len(dataset_list))
+    }
+
+    # Hacemos que el dataset se vea como un diccionario para poder ver el sector en específico al que se refiere
+    data_dict = {dataset_list[i]:data[i].to_dict(orient="records") for i in range(len(dataset_list))}
+
+
+    promptFinal = {
+        "pregunta": idea,
+        "subparametros": subparameter_dict,
+        "data":data_dict,
+        "formato_respuesta":"Devuelve una descripción resumida de la posible arquitectura del proyecto y una lista JSON con recomendaciones de herramientas en formato: categoría, producto, descripción. Esta informacion tiene que estar basada en los parametros_checkeados que esten marcados como True y en sus subparámetros"
+    }
+    json_response = []
+    st.write(promptFinal)
+    # Display the DataFrame as a table
+    st.dataframe(json_response)
