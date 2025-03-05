@@ -1,8 +1,24 @@
 import streamlit as st
 import pandas as pd
+from openai import OpenAI
+import openai
+from dotenv import load_dotenv
+import os
+import re
+import json
 
 
+# Load the environment variables
+load_dotenv('.env')
+API_TOKEN = os.environ.get("API_TOKEN")
+OpenAI.api_key = API_TOKEN
 
+# Aqui va la api key en ruta Documentos
+api_key = ""# No se puede subir a github
+
+
+# Aqui se define el objeto client y se comprueba que es valido el token
+client = OpenAI(api_key=api_key)
 
 urls_list = ["../data/front-end.csv", "../data/back-end.csv", "../data/database.csv", "../data/auth.csv", "../data/ecommerce.csv", "../data/cloudhosting.csv", "../data/cicd devops.csv", "../data/message.csv", "../data/search engine.csv", "../data/media storage.csv"]
 
@@ -327,13 +343,25 @@ if submitted:
     data_dict = {dataset_list[i]:data[i].to_dict(orient="records") for i in range(len(dataset_list))}
 
 
-    promptFinal = {
+    prompt_final = {
         "pregunta": idea,
         "subparametros": subparameter_dict,
         "data":data_dict,
         "formato_respuesta":"Devuelve una descripción resumida de la posible arquitectura del proyecto y una lista JSON con recomendaciones de herramientas en formato: categoría, producto, descripción. Esta informacion tiene que estar basada en los parametros_checkeados que esten marcados como True y en sus subparámetros"
     }
     json_response = []
-    st.write(promptFinal)
+    st.write(prompt_final)
     # Display the DataFrame as a table
     st.dataframe(json_response)
+
+
+    response = client.chat.completions.create(
+    model="gpt-4-turbo",
+    messages=[
+        {"role": "system", "content": "Eres un asistente experto en tecnología y desarrollo de software."},
+        {"role": "user", "content": json.dumps(prompt_final)}
+    ],
+    max_tokens=3000
+    )
+
+    st.write(response.choices[0].message.content)
