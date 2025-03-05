@@ -349,10 +349,9 @@ if submitted:
         "data":data_dict,
         "formato_respuesta":"Devuelve una descripción resumida de la posible arquitectura del proyecto y una lista JSON con recomendaciones de herramientas en formato: categoría, producto, descripción. Esta informacion tiene que estar basada en los parametros_checkeados que esten marcados como True y en sus subparámetros"
     }
-    json_response = []
+
     st.write(prompt_final)
     # Display the DataFrame as a table
-    st.dataframe(json_response)
 
 
     response = client.chat.completions.create(

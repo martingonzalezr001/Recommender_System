@@ -1,0 +1,44 @@
+Descripción de la Arquitectura del Proyecto
+El proyecto consiste en desarrollar una plataforma web para la gestión de reservas de restaurantes, donde los trabajadores del restaurante puedan apuntar reservas de manera eficiente y segura. La solución se estructurará en tres componentes principales: el front-end para la interacción de los usuarios (trabajadores del restaurante), el back-end que manejará la lógica de negocio y las operaciones de la base de datos, y una base de datos robusta y segura para almacenar todos los datos necesarios.
+
+Recomendaciones de Herramientas
+Front-End
+
+Producto: Vue.js
+Descripción: Dado que Vue.js es de escalabilidad media y fácil de aprender, es ideal para casos de uso sencillos como una interfaz de gestión de reservas. Ofrece un buen balance entre escalabilidad, seguridad y facilidad de uso, acorde a los requerimientos del proyecto.
+Back-End
+
+Producto: Node.js con Express.js
+Descripción: Node.js es altamente escalable y su framework Express.js facilita la creación de APIs de forma rápida y con una curva de aprendizaje moderada. La seguridad es manejable a través de diversas librerías y middleware.
+Database
+
+Producto: PostgreSQL
+Descripción: PostgreSQL es una base de datos relacional que ofrece alta seguridad, cumplimiento con los principios ACID y alta escalabilidad, adecuada para manejar las transacciones de reserva en escenarios de uso medios a altos.
+Cloud Hosting
+
+Producto: DigitalOcean
+Descripción: DigitalOcean ofrece una solución IaaS con un coste relativamente bajo, facilidades de autoescalado y una seguridad media. Es fácil de usar y configurar, lo que lo hace adecuado para startups y proyectos a pequeña escala.
+[
+    {
+        "categoría": "Front-End",
+        "producto": "Vue.js",
+        "descripción": "Framework JavaScript que proporciona una escalabilidad y seguridad adecuadas para interfaces sencillas de gestión de reservas."
+    },
+    {
+        "categoría": "Back-End",
+        "producto": "Node.js con Express.js",
+        "descripción": "Combina un entorno de ejecución de JavaScript escalable con un framework de servidor ligero y flexible para construir APIs rápidas."
+    },
+    {
+        "categoría": "Database",
+        "producto": "PostgreSQL",
+        "descripción": "Base de datos SQL robusta y segura, ideal para manejar datos relacionales con requerimientos altos de seguridad y escalabilidad."
+    },
+    {
+        "categoría": "Cloud Hosting",
+        "producto": "DigitalOcean",
+        "descripción": "Proveedor de IaaS que ofrece simplicidad, bajo coste y herramientas adecuadas para proyectos pequeños y medianos en la nube."
+    }
+]
+
+Esta arquitectura está diseñada para ser segura, escalable y coste-efectiva, adaptándose a las necesidades de un ambiente de restaurante que desea manejar reservas de manera digital.
