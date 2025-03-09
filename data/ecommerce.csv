@@ -1,4 +1,4 @@
-Herramienta,Métodos de Pago Soportados,Soporte para E-commerce,Soporte para Suscripciones,Soporte para Pagos Internacionales,Soporte para Fraude y Prevención,Cargos por Transacción,Escalabilidad,Coste,Seguridad,Nivel de Uso
+Producto,Métodos de Pago Soportados,Soporte para E-commerce,Soporte para Suscripciones,Soporte para Pagos Internacionales,Soporte para Fraude y Prevención,Cargos por Transacción,Escalabilidad,Coste,Seguridad,Nivel de Uso
 Stripe,"Tarjetas de Crédito, PayPal, Bitcoin, Transferencias Bancarias",Sí,Sí,Sí,Sí,5%,Alta,Alto,Alta,Alto
 PayPal,"Tarjetas de Crédito, PayPal",No,Sí,Sí,Sí,2.9% + $0.30,Alta,Bajo,Alta,Alto
 Square,"Tarjetas de Crédito, Apple Pay, Google Pay",Sí,Sí,Sí,Sí,2.6% + $0.10,Alta,Medio,Alta,Alto

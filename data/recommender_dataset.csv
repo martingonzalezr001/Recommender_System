@@ -1,4 +1,4 @@
-Name,Category,Subcategory,Use Cases,Tech Stack Compatibility,Key Features,Pricing Model,Community & Support,Performance Considerations
+Producto,Category,Subcategory,Use Cases,Tech Stack Compatibility,Key Features,Pricing Model,Community & Support,Performance Considerations
 Next.js,Frontend,Rendering Framework,"Sitios Web Corporativos, SaaS","Firebase, AWS","SSR, SSG, API Routes",Open Source,"90K GitHub stars, Extensive Docs","SEO-friendly, Fast Builds"
 React,Frontend,UI Library,"Portafolios Personales, SaaS","Redux, GraphQL","Component-based, Hooks, Virtual DOM",Open Source,"200K GitHub stars, Large Community",Highly Performant
 Gatsby,Frontend,Static Site Generator,"Portafolios Personales, Blogs","Markdown, GraphQL","Pre-rendering, Fast builds",Open Source,"55K GitHub stars, Good Documentation",Optimized for Speed

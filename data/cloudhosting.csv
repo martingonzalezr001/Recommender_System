@@ -1,4 +1,4 @@
-Proveedor,Tipo de Servicio,Soporte para Contenedores,Autoescalado,Disponibilidad (SLA),Regiones Disponibles,Escalabilidad,Coste,Seguridad,Nivel de Uso
+Producto,Tipo de Servicio,Soporte para Contenedores,Autoescalado,Disponibilidad (SLA),Regiones Disponibles,Escalabilidad,Coste,Seguridad,Nivel de Uso
 AWS,IaaS,Sí,Sí,99.99%,Global,Alta,Medio,Alta,Alto
 Google Cloud,IaaS,Sí,Sí,99.95%,Global,Alta,Medio,Alta,Alto
 Microsoft Azure,IaaS,Sí,Sí,99.99%,Global,Alta,Medio,Alta,Alto

@@ -1,4 +1,4 @@
-Herramienta,Escalabilidad,Coste,Seguridad,Nivel de uso,Tipo de Almacenamiento,Soporte para Streaming,Latencia de Acceso,Capacidad de Retención,Facilidad de Integración
+Producto,Escalabilidad,Coste,Seguridad,Nivel de uso,Tipo de Almacenamiento,Soporte para Streaming,Latencia de Acceso,Capacidad de Retención,Facilidad de Integración
 Amazon S3,Alta,Medio,Alta,Alta,Object Storage,Sí,Baja,Alta,9
 Google Cloud Storage,Alta,Medio,Alta,Alta,Object Storage,Sí,Baja,Alta,8
 Azure Blob Storage,Alta,Medio,Alta,Alta,Object Storage,Sí,Baja,Alta,8

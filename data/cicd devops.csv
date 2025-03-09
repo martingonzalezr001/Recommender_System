@@ -1,4 +1,4 @@
-Nombre,Tipo de herramienta,Soporte para Contenedores,Integración con Proveedores Cloud,Facilidad de Configuración,Escalado Automático,Escalabilidad,Coste,Seguridad,Nivel de Uso
+Producto,Tipo de herramienta,Soporte para Contenedores,Integración con Proveedores Cloud,Facilidad de Configuración,Escalado Automático,Escalabilidad,Coste,Seguridad,Nivel de Uso
 Jenkins,CI/CD,Sí,Multi-cloud,6,Sí,Alta,Bajo,Alta,Alto
 GitHub Actions,CI/CD,Sí,Multi-cloud,8,Sí,Alta,Bajo,Alta,Alto
 GitLab CI/CD,CI/CD,Sí,Multi-cloud,7,Sí,Alta,Bajo,Alta,Alto

@@ -8,17 +8,16 @@ import re
 import json
 
 
-# Load the environment variables
+# Cargar variables de entorno
 load_dotenv('.env')
+
+# Tomar el token de la API desde las variables de entorno
 API_TOKEN = os.environ.get("API_TOKEN")
+
 OpenAI.api_key = API_TOKEN
 
-# Aqui va la api key en ruta Documentos
-api_key = ""# No se puede subir a github
-
-
 # Aqui se define el objeto client y se comprueba que es valido el token
-client = OpenAI(api_key=api_key)
+client = OpenAI(api_key = API_TOKEN)
 
 urls_list = ["../data/front-end.csv", "../data/back-end.csv", "../data/database.csv", "../data/auth.csv", "../data/ecommerce.csv", "../data/cloudhosting.csv", "../data/cicd devops.csv", "../data/message.csv", "../data/search engine.csv", "../data/media storage.csv"]
 
@@ -62,8 +61,6 @@ def get_data_filtered(arUrl, arParameter):
 
             arParameter[i] = arParameter[i].lower()
             if arParameter[i] in h:
-                st.write("Parametro a comparar: " + arParameter[i])
-                st.write("Url a comparar: " + h)
                 data_to_read.append(h)
             
     return data_to_read
@@ -77,9 +74,20 @@ def read_data(data_to_read):
     
 
 
+# Crear una columna centralizada
+col1, col2, col3 = st.columns([1, 1.5, 1])  # Proporción de columnas (centrado en col2)
+
+with col2:
+    st.image("../img/ProjectBuilderLogo.jpeg", width=220)  # Imagen centrada en col2
+    
+st.markdown(
+    f"""<h1 style='text-align: center; font-family: "Georgia", serif; font-size: 42px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>¡Bienvenido a Project Builder!</h1>""",
+    unsafe_allow_html=True,
+)
 
 st.markdown(
-    f"""<h1 style='text-align: center; font-size: 28px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>¡Bienvenido a la plataforma de ideas de proyectos!</h1>""",
+    f"""<h2 style='width: 100%; font-family: "Verdana", sans-serif; height: 100%; line-height: 1.5; font-weight: 300; text-align: center; font-size: 20px;'>Haznos saber acerca de tus ideas de proyectos. ¿Cuál es tu idea?, ¿Por qué componentes te gustaría que estuviese estructurada?
+        Recuerda que estamos aquí para ayudarte.</h2>""",
     unsafe_allow_html=True,
 )
 with st.form("my_form"):    
@@ -342,25 +350,106 @@ if submitted:
     # Hacemos que el dataset se vea como un diccionario para poder ver el sector en específico al que se refiere
     data_dict = {dataset_list[i]:data[i].to_dict(orient="records") for i in range(len(dataset_list))}
 
+    print("Data dict: ", data_dict)
+    print("Tipo de dato data dict: ", type(data_dict))
+    herramientas = [
+        {
+            "categoría": categoria,
+            "producto": herramienta["Producto"],
+            "descripción": herramienta
+        }
+        for categoria, lista_herramientas in data_dict.items()
+        for herramienta in lista_herramientas  # Asegúrate de que data_dict tenga la estructura correcta
+    ]
+
+    # Convertir la lista de herramientas en JSON
+    herramientas_json = json.dumps(herramientas, indent=2, ensure_ascii=False)
+
+    
+    #print("Como queda el data dict, Data:" + str(data_dict))
+
 
     prompt_final = {
-        "pregunta": idea,
-        "subparametros": subparameter_dict,
-        "data":data_dict,
-        "formato_respuesta":"Devuelve una descripción resumida de la posible arquitectura del proyecto y una lista JSON con recomendaciones de herramientas en formato: categoría, producto, descripción. Esta informacion tiene que estar basada en los parametros_checkeados que esten marcados como True y en sus subparámetros"
-    }
+    "pregunta": idea,
+    "subparametros": subparameter_dict,
+    "data": herramientas_json,  # Se lo pasamos como contexto
+    "formato_respuesta": (
+        "Devuelve **EXCLUSIVAMENTE** la respuesta en este formato sin añadir texto adicional:\n\n"
+        "**Descripción de la Arquitectura:**\n"
+        "(Aquí explica la arquitectura en un párrafo basado en la información proporcionada.)\n\n"
+        "```json\n"
+        "[\n"
+        "  {\"categoría\": \"<Categoría>\", \"producto\": \"<Producto>\", \"descripción\": \"<Resumen breve máximo 20 con los atributos relevantes>\"}\n"
+        "]\n"
+        "```\n"
+        "**NO añadas texto adicional fuera de este formato.**"
+    )
+}
 
-    st.write(prompt_final)
+    # st.write(prompt_final)
     # Display the DataFrame as a table
 
 
     response = client.chat.completions.create(
-    model="gpt-4-turbo",
+    model="gpt-3.5-turbo",
     messages=[
         {"role": "system", "content": "Eres un asistente experto en tecnología y desarrollo de software."},
         {"role": "user", "content": json.dumps(prompt_final)}
     ],
-    max_tokens=3000
+    max_completion_tokens=1000 
     )
 
-    st.write(response.choices[0].message.content)
+    # Guardar respuesta en una variable
+    response_text = response.choices[0].message.content.strip()
+
+    # Mostrar la respuesta de OpenAI
+    print("Respuesta completa:", response_text)
+
+    # Separar descripcion y json
+    json_start = response_text.find("[")
+    json_end = response_text.rfind("]") + 1
+
+    print("Inicio JSON: ", json_start)
+    print("Fin JSON: ", json_end)
+
+    if json_start != -1 and json_end != -1 and json_start < json_end:
+        # Extraer la parte de la descripción
+        descripcion_arquitectura = response_text[:json_start].strip()
+        
+        # Extraer el JSON
+        json_part = response_text[json_start:json_end].strip()  
+
+        try:
+            herramientas_json = json.loads(json_part)
+            print("Herramientas JSON: ", herramientas_json)
+        except json.JSONDecodeError:
+            print("Esto nos encontramios: " + response_text)
+            print("Error al decodificar JSON, revisando formato...")
+            herramientas_json = None
+    else:
+        print("Error en el formato de la respuesta")
+        descripcion_arquitectura = response_text
+        herramientas_json = None
+
+
+    # Buscar json en la respuesta
+    #json_start = response_text.find("[")
+    #json_end = response_text.rfind("]")
+
+    # Guarda el json en una variable
+    #json_data = json.loads(response_text[json_start:json_end+1])
+
+    st.subheader("Descripción de la Arquitectura")
+    st.write(descripcion_arquitectura)
+    
+    if herramientas_json:
+        st.subheader("Lista de Herramientas (en formato JSON)")
+        df = pd.DataFrame(herramientas_json)
+        st.dataframe(df)
+        st.balloons()
+    else:
+        st.subheader("Error al cargar la Lista de Herramientas")
+
+    # response_table = pd.DataFrame(json_data)
+
+    # st.write(response_table)

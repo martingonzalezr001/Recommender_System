@@ -1,4 +1,4 @@
-Herramienta,Modelo de Datos,ACID Compliance,Capacidad de Replicación,Soporte para Big Data,Facilidad de Consultas (1-10),Latencia de Lectura/Escritura,SQL/NoSQL,Distribuida/Centralizada,Escalabilidad,Coste,Seguridad,Nivel de Uso
+Producto,Modelo de Datos,ACID Compliance,Capacidad de Replicación,Soporte para Big Data,Facilidad de Consultas (1-10),Latencia de Lectura/Escritura,SQL/NoSQL,Distribuida/Centralizada,Escalabilidad,Coste,Seguridad,Nivel de Uso
 PostgreSQL,Relacional (SQL),Sí,Alta,No,7,Baja,SQL,Centralizada,Alta,Medio,Alta,Alto
 MySQL,Relacional (SQL),Sí,Alta,No,8,Baja,SQL,Centralizada,Alta,Bajo,Alta,Alto
 MongoDB,Documento (NoSQL),No,Alta,Sí,6,Alta,NoSQL,Distribuida,Alta,Medio,Alta,Medio
