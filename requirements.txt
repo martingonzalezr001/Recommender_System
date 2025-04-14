@@ -3,3 +3,6 @@ openai
 pandas
 numpy
 python-dotenv
+os
+re
+json
