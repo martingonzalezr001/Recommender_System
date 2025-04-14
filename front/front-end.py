@@ -17,7 +17,8 @@ API_TOKEN = os.environ.get("API_TOKEN")
 OpenAI.api_key = API_TOKEN
 
 # Aqui se define el objeto client y se comprueba que es valido el token
-client = OpenAI(api_key = API_TOKEN)
+
+openai.api_key = API_TOKEN
 
 urls_list = ["../data/front-end.csv", "../data/back-end.csv", "../data/database.csv", "../data/auth.csv", "../data/ecommerce.csv", "../data/cloudhosting.csv", "../data/cicd devops.csv", "../data/message.csv", "../data/search engine.csv", "../data/media storage.csv"]
 
