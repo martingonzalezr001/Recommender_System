@@ -79,7 +79,7 @@ def read_data(data_to_read):
 col1, col2, col3 = st.columns([1, 1.5, 1])  # Proporción de columnas (centrado en col2)
 
 with col2:
-    st.image("img/ProjectBuilderLogo.jpg", width=220)  # Imagen centrada en col2
+    st.image("img/logo-nobg.png", width=220)  # Imagen centrada en col2
     
 st.markdown(
     f"""<h1 style='text-align: center; font-family: "Georgia", serif; font-size: 42px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;'>¡Bienvenido a Project Builder!</h1>""",
